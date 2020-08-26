@@ -101,7 +101,7 @@ def testapi(path,a,ls):
         print('总api数13个，请自行确认个数')
         for ra in range(14):
             rana = str(randomapi[ra])
-            print("第 %d 个api: %s", (ra, rana));
+            print("第 %d 个api: %s" % (ra, rana));
             try:
                 if req.get(rapi[rana],headers=headers).status_code == 200:
                     num1[a]+=1
